@@ -1459,3 +1459,141 @@ transition: 0.3s all linear;
 .border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
 .border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
 .border li:nth-child(5):hover {border-right: 10px solid #493224;}
+
+
+/*=========block what you learn=========*/
+
+.list5b {
+    padding:0;
+    list-style: none;
+}    
+.list5b li {
+    position: relative;
+    padding: 10px 30px;
+    background: linear-gradient(to left, #EFEFEF 0%, #FFF, #EFEFEF);
+    border: 2px solid #C0C0C0;
+    color: #506a6b;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, .2);
+    margin-bottom: 5px;
+    text-align:center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.list5b li:hover {
+    border: 2px solid #ADCEE9;
+}
+.list5b li:before {
+    content: "";
+    position:absolute;
+    width: 0;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(to left, #E2F0FA 0%, #FFF, #E2F0FA);
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.list5b li:hover:before {
+    width: 100%;
+    opacity: 1;
+}    
+
+
+/** ============ */
+
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+h2.funny-title{border-top:5px solid #E0DBDE;border-bottom:5px solid #E0DBDE;font-size: 30px;text-align:center;margin-top:40px;margin-bottom:5px;text-transform:uppercase;font-family:'Russo One',sans-serif;font-weight:900;letter-spacing:8px}
+@-webkit-keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+@-moz-keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+@keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+.section-title{-webkit-animation-play-state:running;-moz-animation-play-state:running;animation-play-state:running;color:transparent;background:url(https://obninsksite.ru/assets/theme/images/blog/square.svg) no-repeat rgb(241, 241, 241);background-size:cover;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;-webkit-animation:move-background 20s infinite linear alternate;-moz-animation:move-background 20s infinite linear alternate;animation:move-background 20s infinite linear alternate}
+
+
+/*---WHATSAPP---*/
+
+.whatsapp-button {
+    position: fixed;
+    right: 13px;
+    bottom: 90px;
+    transform: translate(-50%, -50%);
+    background: #25D366; /*цвет кнопки*/
+    border-radius: 50%;
+    width: 55px; /*ширина кнопки*/
+    height: 55px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 53px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 9999;
+    }
+    .whatsapp-button a {
+    color: #fff;
+    }
+    .whatsapp-button:before,
+    .whatsapp-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+    }
+    
+    .whatsapp-button:after{
+    animation-delay: .5s;
+    }
+    
+    @keyframes animate
+    {
+    0%
+    {
+    transform: scale(0.5);
+    opacity: 0;
+    }
+    50%
+    {
+    opacity: 1;
+    }
+    100%
+    {
+    transform: scale(1.2);
+    opacity: 0;
+    }
+    }
+    @media (max-width : 800px) {  
+    .whatsapp-button {   
+    bottom: 5px; /*отступ кнопки снизу от экрана*/
+    left: 70px; /*отступ кнопки слева от экрана(right - справа)*/
+    }
+    
+    .whatsapp-button {
+    width: 100px; /*ширина кнопки*/
+    height: 100px; /*высота кнопки*/
+    line-height: 97px;
+    font-size: 65px;
+    
+    }
+    }
