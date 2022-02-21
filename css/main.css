@@ -1660,6 +1660,10 @@ h2.funny-title{border-top:5px solid #E0DBDE;border-bottom:5px solid #E0DBDE;font
         }
     }
 
+
+
+    /*=====gallery&avito====*/
+
     blockquote {
         margin: 0;
         background: #F0F0F1;
@@ -1690,4 +1694,19 @@ h2.funny-title{border-top:5px solid #E0DBDE;border-bottom:5px solid #E0DBDE;font
         font-weight: 300;
         }
 
+        /*=================list of rules=====*/
         
+        .num-list li {
+            margin-bottom: 15px;
+            margin-top: 10px;
+            list-style: none;
+            }
+            .num-list li span{
+            background: #05A4E8; /*фон */
+            color: #FFF; /* цвет цифр */
+            margin-right: 10px; /* правый отступ */
+            padding: 3px 6px; /* внутренние отступы */
+            font-weight: bold; /*жирность цифр */
+            font-size:16px; /*размер шрифта */
+            border-radius:12px; /*скругление углов */
+            }
